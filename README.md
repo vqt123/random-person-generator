@@ -1,3 +1,9 @@
+
+# Random Person Generator
+
+This library allows you to generate random diverse fictional characters from around the globe.
+
+
 ```javascript
 import { generateRandomProfile, generateRandomWomanProfile, generateRandomManProfile } from './index.js';
 
