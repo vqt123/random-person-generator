@@ -1,26 +1,19 @@
+import data from './data.js';
+
 
 function generateRandomProfile() {
-    const firstNames = ['John', 'Jane', 'Sam', 'Sue', 'Bob', 'Alice'];
-    const lastNames = ['Doe', 'Smith', 'Johnson', 'Brown', 'Taylor', 'Miller'];
-    const countries = ['USA', 'Canada', 'UK', 'Australia', 'Germany', 'France'];
-    const genders = ['Male', 'Female'];
-    const hairstyles = ['Short', 'Medium', 'Long', 'Bald'];
+    const race = data.races[Math.floor(Math.random() * data.races.length)];
+    const contries = data.raceToCountries[race];
+    const country = contries[Math.floor(Math.random() * contries.length)];    
+    const gender = data.genders[Math.floor(Math.random() * data.genders.length)];
+    const hair_colors = data.raceToHairColors[race];
+    const hair_color = hair_colors[Math.floor(Math.random() * hair_colors.length)]
+    const first_name = (gender == 'woman') ? data.countryToFemaleNames[country][Math.floor(Math.random() * data.countryToFemaleNames[country].length)] : data.countryToMaleNames[country][Math.floor(Math.random() * data.countryToMaleNames[country].length)];
+    const last_name = data.countryToLastNames[country][Math.floor(Math.random() * data.countryToLastNames[country].length)];
 
-    const first_name = firstNames[Math.floor(Math.random() * firstNames.length)];
-    const last_name = lastNames[Math.floor(Math.random() * lastNames.length)];
-    const gender = genders[Math.floor(Math.random() * genders.length)];
-    const age = Math.floor(Math.random() * (100 - 18 + 1)) + 18;
-    const height = Math.floor(Math.random() * (200 - 150 + 1)) + 150;
-    const weight = Math.floor(Math.random() * (100 - 50 + 1)) + 50;
-    const hairstyle = hairstyles[Math.floor(Math.random() * hairstyles.length)];
 
-    return { first_name, last_name, countries, gender, age, height, weight, hairstyle };
+    return { first_name, last_name, race, country, gender, hair_color};
 }
 
+
 export default generateRandomProfile;
-
-
-/**
- * Generates a random profile with a name, age, and other attributes.
- * @returns {{first_name: string, last_name: string, countries: string[], gender: string, age: number, height: number, weight: number, hairstyle: string}} A profile object.
- */
