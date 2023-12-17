@@ -1,6 +1,6 @@
 {
   "name": "random-person-generator",
-  "version": "1.0.5",
+  "version": "1.0.6",
   "description": "",
   "main": "index.js",
   "types:": "index.d.ts",
@@ -10,5 +10,5 @@
   "keywords": [],
   "type": "module",
   "author": "",
-  "license": "ISC"
+  "license": "MIT"
 }
