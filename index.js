@@ -2,8 +2,8 @@ import data from './data.js';
 
 function generateRandomWomanProfile() {
     const race = data.races[Math.floor(Math.random() * data.races.length)];
-    const contries = data.raceToCountries[race];
-    const country = contries[Math.floor(Math.random() * contries.length)];    
+    const countries = data.raceToCountries[race];
+    const country = countries[Math.floor(Math.random() * countries.length)];    
     const gender = 'woman';
     const hair_colors = data.raceToHairColors[race];
     const hair_color = hair_colors[Math.floor(Math.random() * hair_colors.length)]
@@ -16,8 +16,8 @@ function generateRandomWomanProfile() {
 
 function generateRandomManProfile() {
     const race = data.races[Math.floor(Math.random() * data.races.length)];
-    const contries = data.raceToCountries[race];
-    const country = contries[Math.floor(Math.random() * contries.length)];    
+    const countries = data.raceToCountries[race];
+    const country = countries[Math.floor(Math.random() * countries.length)];    
     const gender = 'man';
     const hair_colors = data.raceToHairColors[race];
     const hair_color = hair_colors[Math.floor(Math.random() * hair_colors.length)]
@@ -31,8 +31,8 @@ function generateRandomManProfile() {
 
 function generateRandomProfile() {
     const race = data.races[Math.floor(Math.random() * data.races.length)];
-    const contries = data.raceToCountries[race];
-    const country = contries[Math.floor(Math.random() * contries.length)];    
+    const countries = data.raceToCountries[race];
+    const country = countries[Math.floor(Math.random() * countries.length)];    
     const gender = data.genders[Math.floor(Math.random() * data.genders.length)];
     const hair_colors = data.raceToHairColors[race];
     const hair_color = hair_colors[Math.floor(Math.random() * hair_colors.length)]
@@ -44,4 +44,4 @@ function generateRandomProfile() {
 }
 
 
-export default {generateRandomProfile, generateRandomWomanProfile, generateRandomManProfile};
+export {generateRandomProfile, generateRandomWomanProfile, generateRandomManProfile};

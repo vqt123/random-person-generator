@@ -103,7 +103,12 @@ const raceToCountries =
     "Sri Lanka": ["Perera", "Fernando", "Silva", "De Silva", "Jayasinghe", "Gunawardena", "Bandara", "Ratnayake", "Wickramasinghe", "Rajapaksa"],
     "Indonesia": ["Santoso", "Wijaya", "Saputra", "Hartono", "Putra", "Sari", "Kurniawan", "Susanto", "Setiawan", "Anggraini"],
     "Philippines": ["Santos", "Reyes", "Cruz", "Bautista", "Ocampo", "Garcia", "Mendoza", "Torres", "Martinez", "Flores"],
-    "Thailand": ["Srisai", "Jitpraphai", "Kulap", "Chantarasiri", "Thitimajshima", "Wongsawat", "Prachachart", "Sukhaseum", "Thongchai", "Chirathivat"]
+    "Thailand": ["Srisai", "Jitpraphai", "Kulap", "Chantarasiri", "Thitimajshima", "Wongsawat", "Prachachart", "Sukhaseum", "Thongchai", "Chirathivat"],
+    "Israel": ["Cohen", "Levi", "Mizrachi", "Peretz", "Friedman", "Goldberg", "Katz", "Shapira", "Hassan", "Weiss"],
+    "Wales": ["Jones", "Williams", "Davies", "Evans", "Thomas", "Roberts", "Lewis", "Hughes", "Morgan", "Griffiths"],
+    "China": ["Wang", "Li", "Zhang", "Liu", "Chen", "Yang", "Huang", "Zhao", "Wu", "Zhou"],
+    "Persian": ["Kazemi", "Mohammadi", "Hosseini", "Ahmadi", "Rezai", "Khamenei", "Rouhani", "Jafari", "Rahimi", "Ghasemi"],
+    "England": ["Smith", "Jones", "Taylor", "Brown", "Wilson", "Evans", "Thomas", "Roberts", "Johnson", "Lewis"]
   }
   
 
