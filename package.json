@@ -1,6 +1,6 @@
 {
   "name": "random-person-generator",
-  "version": "1.0.6",
+  "version": "1.0.7",
   "description": "",
   "main": "index.js",
   "types:": "index.d.ts",
@@ -10,5 +10,10 @@
   "keywords": [],
   "type": "module",
   "author": "",
-  "license": "MIT"
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/vqt123/random-person-generator.git"
+  }
+  
 }
